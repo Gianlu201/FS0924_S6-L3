@@ -17,15 +17,21 @@
       justify-content: center;
 
       h1 {
+        position: relative;
+        opacity: 0;
         font-size: 5em;
         font-weight: 900;
         line-height: 1em;
         color: $titleColor;
+        animation: 3s go-down 1s forwards;
       }
 
       p {
+        position: relative;
+        opacity: 0;
         margin: 20px 0;
         font-size: 1.2em;
+        animation: 3s go-down 1.5s forwards;
       }
 
       .buttonsBox {
@@ -33,28 +39,63 @@
 
         a.first {
           @include heroButton($buttonBlu);
+          animation-delay: 2s;
         }
 
         a.second {
           @include heroButton($buttonOrange);
+          animation-delay: 2.2s;
         }
 
         a.third {
           @include heroButton($buttonGreen);
+          animation-delay: 2.4s;
         }
       }
     }
 
     .right {
       width: 35%;
-      position: relative;
-      top: 130px;
 
       img {
+        position: relative;
+        top: 130px;
+        opacity: 0;
         width: 100%;
         @include image($cardBorderRadius, 15px);
         border: 3px solid white;
+        animation: 3s go-up 0.5s forwards;
       }
     }
+  }
+}
+
+@keyframes go-up {
+  from {
+    top: 250px;
+    opacity: 0;
+  }
+  100% {
+    top: 130px;
+    opacity: 1;
+  }
+}
+
+@keyframes go-down {
+  from {
+    bottom: 100px;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

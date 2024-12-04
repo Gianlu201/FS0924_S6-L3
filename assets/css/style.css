@@ -58,51 +58,107 @@ header .box nav ul li a:hover {
   justify-content: center;
 }
 .hero .box .left h1 {
+  position: relative;
+  opacity: 0;
   font-size: 5em;
   font-weight: 900;
   line-height: 1em;
   color: #28064f;
+  animation: 3s go-down 1s forwards;
 }
 .hero .box .left p {
+  position: relative;
+  opacity: 0;
   margin: 20px 0;
   font-size: 1.2em;
+  animation: 3s go-down 1.5s forwards;
 }
 .hero .box .left .buttonsBox {
   margin-top: 20px;
 }
 .hero .box .left .buttonsBox a.first {
+  position: relative;
+  opacity: 0;
   background-color: #0e6cff;
   font-size: 0.8em;
   padding: 1em;
   border-radius: 5px;
   margin-right: 10px;
+  animation: 3s appear forwards;
+  animation-delay: 2s;
+}
+.hero .box .left .buttonsBox a.first:hover {
+  transform: scale(1.2, 1.2);
 }
 .hero .box .left .buttonsBox a.second {
+  position: relative;
+  opacity: 0;
   background-color: #ff8700;
   font-size: 0.8em;
   padding: 1em;
   border-radius: 5px;
   margin-right: 10px;
+  animation: 3s appear forwards;
+  animation-delay: 2.2s;
+}
+.hero .box .left .buttonsBox a.second:hover {
+  transform: scale(1.2, 1.2);
 }
 .hero .box .left .buttonsBox a.third {
+  position: relative;
+  opacity: 0;
   background-color: #4caf50;
   font-size: 0.8em;
   padding: 1em;
   border-radius: 5px;
   margin-right: 10px;
+  animation: 3s appear forwards;
+  animation-delay: 2.4s;
+}
+.hero .box .left .buttonsBox a.third:hover {
+  transform: scale(1.2, 1.2);
 }
 .hero .box .right {
   width: 35%;
-  position: relative;
-  top: 130px;
 }
 .hero .box .right img {
+  position: relative;
+  top: 130px;
+  opacity: 0;
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 0 15px black;
   border: 3px solid white;
+  animation: 3s go-up 0.5s forwards;
 }
 
+@keyframes go-up {
+  from {
+    top: 250px;
+    opacity: 0;
+  }
+  100% {
+    top: 130px;
+    opacity: 1;
+  }
+}
+@keyframes go-down {
+  from {
+    bottom: 100px;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .grid {
   margin: 90px 0 50px;
   display: flex;
