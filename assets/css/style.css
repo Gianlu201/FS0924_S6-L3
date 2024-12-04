@@ -7,10 +7,11 @@
 html,
 body {
   color: #f4f4f4;
+  font-family: "Roboto", serif;
 }
 
 a {
-  color: white;
+  color: #f4f4f4;
 }
 a:link, a:visited {
   text-decoration: none;
@@ -36,6 +37,81 @@ header .box nav ul {
 header .box nav ul li {
   list-style-type: none;
   margin-right: 20px;
+}
+header .box nav ul li a:hover {
+  color: #ff8700;
+}
+
+.hero {
+  background-color: #640fc5;
+  height: 60vh;
+}
+.hero .box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hero .box .left {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .box .left h1 {
+  font-size: 5em;
+  font-weight: 900;
+  line-height: 1em;
+  color: #28064f;
+}
+.hero .box .left p {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+.hero .box .left .buttonsBox {
+  margin-top: 20px;
+}
+.hero .box .left .buttonsBox a.first {
+  background-color: #0e6cff;
+  font-size: 0.8em;
+  padding: 1em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.hero .box .left .buttonsBox a.second {
+  background-color: #ff8700;
+  font-size: 0.8em;
+  padding: 1em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.hero .box .left .buttonsBox a.third {
+  background-color: #4caf50;
+  font-size: 0.8em;
+  padding: 1em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.hero .box .right {
+  width: 35%;
+  position: relative;
+  top: 130px;
+}
+.hero .box .right img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px black;
+  border: 3px solid white;
+}
+
+.grid {
+  margin: 90px 0 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.grid img {
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 0 0 5px black;
 }
 
 .box {

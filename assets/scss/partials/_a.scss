@@ -1,5 +1,7 @@
+@import 'colors';
+
 a {
-  color: white;
+  color: $textColor;
 
   &:link,
   &:visited {
