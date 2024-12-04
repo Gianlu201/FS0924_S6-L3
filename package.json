@@ -1,0 +1,14 @@
+{
+  "name": "fs0924_s6-l3",
+  "version": "1.0.0",
+  "description": "Esercitazione 04/12/2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gianlu201",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.82.0"
+  }
+}
