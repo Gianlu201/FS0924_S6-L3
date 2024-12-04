@@ -1,0 +1,8 @@
+a {
+  color: white;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}

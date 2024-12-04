@@ -1,3 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html,
+body {
+  color: #f4f4f4;
+}
+
+a {
+  color: white;
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+
+header {
+  background-color: #640fc5;
+}
+header .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .logoBox {
+  width: 10%;
+}
+header .box .logoBox img {
+  width: 100%;
+}
+header .box nav ul {
+  display: flex;
+}
+header .box nav ul li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=style.css.map */
