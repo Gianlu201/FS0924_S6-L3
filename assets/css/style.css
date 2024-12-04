@@ -7,7 +7,7 @@
 html,
 body {
   color: #f4f4f4;
-  font-family: "Roboto", serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -37,6 +37,7 @@ header .box nav ul {
 header .box nav ul li {
   list-style-type: none;
   margin-right: 20px;
+  font-size: 0.8em;
 }
 header .box nav ul li a:hover {
   color: #ff8700;
