@@ -69,6 +69,7 @@ header .box nav ul li a:hover {
 }
 .hero .box .left p {
   position: relative;
+  color: #f4f4f4;
   opacity: 0;
   margin: 20px 0;
   font-size: 1.2em;
@@ -78,6 +79,7 @@ header .box nav ul li a:hover {
   margin-top: 20px;
 }
 .hero .box .left .buttonsBox a.first {
+  display: inline-block;
   position: relative;
   opacity: 0;
   background-color: #0e6cff;
@@ -89,9 +91,10 @@ header .box nav ul li a:hover {
   animation-delay: 2s;
 }
 .hero .box .left .buttonsBox a.first:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 .hero .box .left .buttonsBox a.second {
+  display: inline-block;
   position: relative;
   opacity: 0;
   background-color: #ff8700;
@@ -103,9 +106,10 @@ header .box nav ul li a:hover {
   animation-delay: 2.2s;
 }
 .hero .box .left .buttonsBox a.second:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 .hero .box .left .buttonsBox a.third {
+  display: inline-block;
   position: relative;
   opacity: 0;
   background-color: #4caf50;
@@ -117,7 +121,7 @@ header .box nav ul li a:hover {
   animation-delay: 2.4s;
 }
 .hero .box .left .buttonsBox a.third:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 .hero .box .right {
   width: 35%;
